@@ -6,8 +6,6 @@ This project was built with NodeJS, Express, and MongoDB/Mongoose.
 
 ---
 
-![DEMO](#)
-
 ---
 
 # Link To Application 👇🏽
