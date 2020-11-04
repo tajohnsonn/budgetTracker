@@ -5,6 +5,9 @@
 This project was built with NodeJS, Express, and MongoDB/Mongoose.
 
 ---
+## Demo
+
+<img width="1187" alt="budgetTracker-img" src="https://user-images.githubusercontent.com/57122209/98058759-59c45280-1dfa-11eb-8c36-3c058decdec2.png">
 
 ---
 
