@@ -18,7 +18,7 @@ This project was built with NodeJS, Express, and MongoDB/Mongoose.
 
 # Github Repo 👇🏽
 
-> [Workout Tracker Repo](https://github.com/tajohnsonn/budgetTracker)
+> [Budget Tracker Repo](https://github.com/tajohnsonn/budgetTracker)
 
 # Installation
 
