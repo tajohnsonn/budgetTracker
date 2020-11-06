@@ -20,7 +20,7 @@ app.use(express.json());
 // setting root to public
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budgetdb", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budgetdb", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
