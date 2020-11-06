@@ -12,7 +12,11 @@ fetch("/api/transaction")
     populateTotal();
     populateTable();
     populateChart();
+  })
+  .catch(err => {
+    res.status(404).json(err);
   });
+}
 
 function populateTotal() {
   // reduce transaction amounts to a single total value
