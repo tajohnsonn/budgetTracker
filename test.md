@@ -1,104 +1,100 @@
-2020-11-05T11:13:07.184096+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/pool.js:995:11
-2020-11-05T11:13:07.184097+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/connect.js:32:7
-2020-11-05T11:13:07.184097+00:00 app[web.1]: at callback (/app/node_modules/mongodb/lib/core/connection/connect.js:280:5)
-2020-11-05T11:13:07.184097+00:00 app[web.1]: at Socket.<anonymous> (/app/node_modules/mongodb/lib/core/connection/connect.js:310:7)
-2020-11-05T11:13:07.184098+00:00 app[web.1]: at Object.onceWrapper (events.js:421:26)
-2020-11-05T11:13:07.184098+00:00 app[web.1]: at Socket.emit (events.js:314:20)
-2020-11-05T11:13:07.184101+00:00 app[web.1]: at emitErrorNT (internal/streams/destroy.js:92:8)
-2020-11-05T11:13:07.184102+00:00 app[web.1]: at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
-2020-11-05T11:13:07.184102+00:00 app[web.1]: at processTicksAndRejections (internal/process/task_queues.js:84:21)
-2020-11-05T11:13:07.184261+00:00 app[web.1]: (node:23) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
-2020-11-05T11:13:07.184387+00:00 app[web.1]: (node:23) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-2020-11-05T11:14:03.082625+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
-2020-11-05T11:14:03.111628+00:00 heroku[web.1]: Stopping process with SIGKILL
-2020-11-05T11:14:03.234419+00:00 heroku[web.1]: Process exited with status 137
-2020-11-05T11:14:03.280087+00:00 heroku[web.1]: State changed from starting to crashed
-2020-11-05T17:02:04.787099+00:00 heroku[web.1]: State changed from crashed to starting
-2020-11-05T17:02:09.972313+00:00 heroku[web.1]: Starting process with command `npm start`
-2020-11-05T17:02:13.246235+00:00 app[web.1]:
-2020-11-05T17:02:13.246260+00:00 app[web.1]: > budget-app@1.0.0 start /app
-2020-11-05T17:02:13.246261+00:00 app[web.1]: > node server.js
-2020-11-05T17:02:13.246261+00:00 app[web.1]:
-2020-11-05T17:02:14.214838+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-2020-11-05T17:02:14.217028+00:00 app[web.1]: App running on port 3000!
-2020-11-05T17:02:14.233905+00:00 app[web.1]: (node:23) UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
-2020-11-05T17:02:14.233908+00:00 app[web.1]: at TCPConnectWrap.afterConnect [as oncomplete](net.js:1145:16) {
-2020-11-05T17:02:14.233909+00:00 app[web.1]: name: 'MongoNetworkError'
-2020-11-05T17:02:14.233910+00:00 app[web.1]: }]
-2020-11-05T17:02:14.233914+00:00 app[web.1]: at Pool.<anonymous> (/app/node_modules/mongodb/lib/core/topologies/server.js:438:11)
-2020-11-05T17:02:14.233916+00:00 app[web.1]: at Pool.emit (events.js:314:20)
-2020-11-05T17:02:14.233916+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/pool.js:562:14
-2020-11-05T17:02:14.233917+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/pool.js:995:11
-2020-11-05T17:02:14.233917+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/connect.js:32:7
-2020-11-05T17:02:14.233918+00:00 app[web.1]: at callback (/app/node_modules/mongodb/lib/core/connection/connect.js:280:5)
-2020-11-05T17:02:14.233918+00:00 app[web.1]: at Socket.<anonymous> (/app/node_modules/mongodb/lib/core/connection/connect.js:310:7)
-2020-11-05T17:02:14.233918+00:00 app[web.1]: at Object.onceWrapper (events.js:421:26)
-2020-11-05T17:02:14.233919+00:00 app[web.1]: at Socket.emit (events.js:314:20)
-2020-11-05T17:02:14.233920+00:00 app[web.1]: at emitErrorNT (internal/streams/destroy.js:92:8)
-2020-11-05T17:02:14.233921+00:00 app[web.1]: at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
-2020-11-05T17:02:14.233921+00:00 app[web.1]: at processTicksAndRejections (internal/process/task_queues.js:84:21)
-2020-11-05T17:02:14.234087+00:00 app[web.1]: (node:23) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
-2020-11-05T17:02:14.234202+00:00 app[web.1]: (node:23) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-2020-11-05T17:03:10.622923+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
-2020-11-05T17:03:10.669944+00:00 heroku[web.1]: Stopping process with SIGKILL
-2020-11-05T17:03:10.874947+00:00 heroku[web.1]: Process exited with status 137
-2020-11-05T17:03:10.936191+00:00 heroku[web.1]: State changed from starting to crashed
-2020-11-05T22:46:22.025293+00:00 heroku[web.1]: State changed from crashed to starting
-2020-11-05T22:46:27.200121+00:00 heroku[web.1]: Starting process with command `npm start`
-2020-11-05T22:46:30.613413+00:00 app[web.1]:
-2020-11-05T22:46:30.613441+00:00 app[web.1]: > budget-app@1.0.0 start /app
-2020-11-05T22:46:30.613442+00:00 app[web.1]: > node server.js
-2020-11-05T22:46:30.613442+00:00 app[web.1]:
-2020-11-05T22:46:31.710087+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-2020-11-05T22:46:31.711553+00:00 app[web.1]: App running on port 3000!
-2020-11-05T22:46:31.722373+00:00 app[web.1]: (node:23) UnhandledPromiseRejectionWarning: MongoNetworkError: failed to connect to server [localhost:27017] on first connect [Error: connect ECONNREFUSED 127.0.0.1:27017
-2020-11-05T22:46:31.722375+00:00 app[web.1]: at TCPConnectWrap.afterConnect [as oncomplete](net.js:1145:16) {
-2020-11-05T22:46:31.722375+00:00 app[web.1]: name: 'MongoNetworkError'
-2020-11-05T22:46:31.722376+00:00 app[web.1]: }]
-2020-11-05T22:46:31.722377+00:00 app[web.1]: at Pool.<anonymous> (/app/node_modules/mongodb/lib/core/topologies/server.js:438:11)
-2020-11-05T22:46:31.722377+00:00 app[web.1]: at Pool.emit (events.js:314:20)
-2020-11-05T22:46:31.722378+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/pool.js:562:14
-2020-11-05T22:46:31.722378+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/pool.js:995:11
-2020-11-05T22:46:31.722378+00:00 app[web.1]: at /app/node_modules/mongodb/lib/core/connection/connect.js:32:7
-2020-11-05T22:46:31.722379+00:00 app[web.1]: at callback (/app/node_modules/mongodb/lib/core/connection/connect.js:280:5)
-2020-11-05T22:46:31.722379+00:00 app[web.1]: at Socket.<anonymous> (/app/node_modules/mongodb/lib/core/connection/connect.js:310:7)
-2020-11-05T22:46:31.722380+00:00 app[web.1]: at Object.onceWrapper (events.js:421:26)
-2020-11-05T22:46:31.722380+00:00 app[web.1]: at Socket.emit (events.js:314:20)
-2020-11-05T22:46:31.722381+00:00 app[web.1]: at emitErrorNT (internal/streams/destroy.js:92:8)
-2020-11-05T22:46:31.722381+00:00 app[web.1]: at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
-2020-11-05T22:46:31.722381+00:00 app[web.1]: at processTicksAndRejections (internal/process/task_queues.js:84:21)
-2020-11-05T22:46:31.722602+00:00 app[web.1]: (node:23) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
-2020-11-05T22:46:31.722733+00:00 app[web.1]: (node:23) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-2020-11-05T22:47:27.341065+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
-2020-11-05T22:47:27.367614+00:00 heroku[web.1]: Stopping process with SIGKILL
-2020-11-05T22:47:27.510538+00:00 heroku[web.1]: Process exited with status 137
-2020-11-05T22:47:27.578995+00:00 heroku[web.1]: State changed from starting to crashed
-2020-11-06T01:55:43.000000+00:00 app[api]: Build started by user tajohnsonn@gmail.com
-2020-11-06T01:56:09.730218+00:00 app[api]: Deploy ad916313 by user tajohnsonn@gmail.com
-2020-11-06T01:56:09.730218+00:00 app[api]: Release v12 created by user tajohnsonn@gmail.com
-2020-11-06T01:56:10.167059+00:00 heroku[web.1]: State changed from crashed to starting
-2020-11-06T01:56:11.000000+00:00 app[api]: Build succeeded
-2020-11-06T01:56:13.308743+00:00 heroku[web.1]: Starting process with command `npm start`
-2020-11-06T01:56:15.961786+00:00 app[web.1]:
-2020-11-06T01:56:15.961802+00:00 app[web.1]: > budget-app@1.0.0 start /app
-2020-11-06T01:56:15.961803+00:00 app[web.1]: > node server.js
-2020-11-06T01:56:15.961803+00:00 app[web.1]:
-2020-11-06T01:56:16.493026+00:00 app[web.1]: App running on port 3000!
-2020-11-06T01:56:16.515777+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-2020-11-06T01:57:13.383309+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-2020-11-06T01:57:13.405298+00:00 heroku[web.1]: Stopping process with SIGKILL
-2020-11-06T01:57:13.515128+00:00 heroku[web.1]: Process exited with status 137
-2020-11-06T01:57:13.557560+00:00 heroku[web.1]: State changed from starting to crashed
-2020-11-06T01:57:13.561302+00:00 heroku[web.1]: State changed from crashed to starting
-2020-11-06T01:57:17.163964+00:00 heroku[web.1]: Starting process with command `npm start`
-2020-11-06T01:57:19.545677+00:00 app[web.1]: 
-2020-11-06T01:57:19.545693+00:00 app[web.1]: > budget-app@1.0.0 start /app
-2020-11-06T01:57:19.545694+00:00 app[web.1]: > node server.js
-2020-11-06T01:57:19.545694+00:00 app[web.1]: 
-2020-11-06T01:57:20.203019+00:00 app[web.1]: App running on port 3000!
-2020-11-06T01:57:20.222384+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-2020-11-06T01:57:35.940875+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=frozen-tundra-49156.herokuapp.com request_id=e21ce8fe-b2d6-4076-93c2-49b68688f170 fwd="76.91.203.58" dyno= connect= service= status=503 bytes= protocol=https
-2020-11-06T01:58:17.218793+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-2020-11-06T01:58:17.240465+00:00 heroku[web.1]: Stopping process with SIGKILL
-2020-11-06T01:58:17.311726+00:00 heroku[web.1]: Process exited with status 137
-2020-11-06T01:58:17.357092+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T02:15:27.099709+00:00 app[web.1]: > node server.js
+2020-11-06T02:15:27.099710+00:00 app[web.1]:
+2020-11-06T02:15:28.093548+00:00 app[web.1]: App running on port 3000!
+2020-11-06T02:15:28.143822+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T02:16:23.905801+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
+2020-11-06T02:16:23.943621+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T02:16:24.105194+00:00 heroku[web.1]: Process exited with status 137
+2020-11-06T02:16:24.159726+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T02:16:24.163075+00:00 heroku[web.1]: State changed from crashed to starting
+2020-11-06T02:16:28.011533+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-11-06T02:16:30.356590+00:00 app[web.1]:
+2020-11-06T02:16:30.356610+00:00 app[web.1]: > budget-app@1.0.0 start /app
+2020-11-06T02:16:30.356611+00:00 app[web.1]: > node server.js
+2020-11-06T02:16:30.356611+00:00 app[web.1]:
+2020-11-06T02:16:31.013268+00:00 app[web.1]: App running on port 3000!
+2020-11-06T02:16:31.033227+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T02:16:55.092109+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=frozen-tundra-49156.herokuapp.com request_id=06e65e46-8e8e-4472-81d0-04df0a8c5e68 fwd="76.91.203.58" dyno= connect= service= status=503 bytes= protocol=https
+2020-11-06T02:17:05.356369+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=frozen-tundra-49156.herokuapp.com request_id=9b97673f-98f1-428d-a357-2380f8d42d47 fwd="76.91.203.58" dyno= connect= service= status=503 bytes= protocol=https
+2020-11-06T02:17:28.296429+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
+2020-11-06T02:17:28.316726+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T02:17:28.423832+00:00 heroku[web.1]: Process exited with status 137
+2020-11-06T02:17:28.474167+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T02:17:29.922774+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=frozen-tundra-49156.herokuapp.com request_id=087d0599-7aea-43c9-8415-35e535eafb3a fwd="76.91.203.58" dyno= connect= service= status=503 bytes= protocol=https
+2020-11-06T02:24:04.683203+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=frozen-tundra-49156.herokuapp.com request_id=c02b3da7-c2d6-4790-a29e-4b15cf5158f7 fwd="76.91.203.58" dyno= connect= service= status=503 bytes= protocol=https
+2020-11-06T02:24:04.952315+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=frozen-tundra-49156.herokuapp.com request_id=7daac532-de3f-429f-8f50-7d1ce597edec fwd="76.91.203.58" dyno= connect= service= status=503 bytes= protocol=https
+2020-11-06T02:49:30.941261+00:00 heroku[web.1]: State changed from crashed to starting
+2020-11-06T02:49:34.638694+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-11-06T02:49:36.869147+00:00 app[web.1]:
+2020-11-06T02:49:36.869172+00:00 app[web.1]: > budget-app@1.0.0 start /app
+2020-11-06T02:49:36.869173+00:00 app[web.1]: > node server.js
+2020-11-06T02:49:36.869173+00:00 app[web.1]:
+2020-11-06T02:49:37.387256+00:00 app[web.1]: App running on port 3000!
+2020-11-06T02:49:37.428633+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T02:50:34.779832+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
+2020-11-06T02:50:34.800829+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T02:50:34.898355+00:00 heroku[web.1]: Process exited with status 137
+2020-11-06T02:50:34.937832+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T04:04:58.472170+00:00 heroku[web.1]: State changed from crashed to starting
+2020-11-06T04:05:02.959844+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-11-06T04:05:05.583699+00:00 app[web.1]:
+2020-11-06T04:05:05.583720+00:00 app[web.1]: > budget-app@1.0.0 start /app
+2020-11-06T04:05:05.583723+00:00 app[web.1]: > node server.js
+2020-11-06T04:05:05.583723+00:00 app[web.1]:
+2020-11-06T04:05:06.142366+00:00 app[web.1]: App running on port 3000!
+2020-11-06T04:05:06.180126+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T04:06:03.472358+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
+2020-11-06T04:06:03.494106+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T04:06:03.588650+00:00 heroku[web.1]: Process exited with status 137
+2020-11-06T04:06:03.631345+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T05:34:36.074813+00:00 heroku[web.1]: State changed from crashed to starting
+2020-11-06T05:34:40.592657+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-11-06T05:34:43.585704+00:00 app[web.1]:
+2020-11-06T05:34:43.585726+00:00 app[web.1]: > budget-app@1.0.0 start /app
+2020-11-06T05:34:43.585727+00:00 app[web.1]: > node server.js
+2020-11-06T05:34:43.585727+00:00 app[web.1]:
+2020-11-06T05:34:44.413128+00:00 app[web.1]: App running on port 3000!
+2020-11-06T05:34:44.486973+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T05:35:40.765074+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
+2020-11-06T05:35:40.795648+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T05:35:40.875193+00:00 heroku[web.1]: Process exited with status 137
+2020-11-06T05:35:40.917957+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T08:38:35.591029+00:00 heroku[web.1]: State changed from crashed to starting
+2020-11-06T08:38:41.391386+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-11-06T08:38:44.580922+00:00 app[web.1]:
+2020-11-06T08:38:44.580933+00:00 app[web.1]: > budget-app@1.0.0 start /app
+2020-11-06T08:38:44.580933+00:00 app[web.1]: > node server.js
+2020-11-06T08:38:44.580934+00:00 app[web.1]:
+2020-11-06T08:38:45.495886+00:00 app[web.1]: App running on port 3000!
+2020-11-06T08:38:45.523582+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T08:39:42.052816+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to \$PORT within 60 seconds of launch
+2020-11-06T08:39:42.080290+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T08:39:42.173333+00:00 heroku[web.1]: Process exited with status 137
+2020-11-06T08:39:42.218316+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T14:22:45.830853+00:00 heroku[web.1]: State changed from crashed to starting
+2020-11-06T14:22:50.577409+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-11-06T14:22:53.896268+00:00 app[web.1]:
+2020-11-06T14:22:53.896292+00:00 app[web.1]: > budget-app@1.0.0 start /app
+2020-11-06T14:22:53.896293+00:00 app[web.1]: > node server.js
+2020-11-06T14:22:53.896293+00:00 app[web.1]:
+2020-11-06T14:22:54.743818+00:00 app[web.1]: App running on port 3000!
+2020-11-06T14:22:54.798268+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T14:23:51.223913+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-11-06T14:23:51.251333+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T14:23:51.363351+00:00 heroku[web.1]: Process exited with status 137
+2020-11-06T14:23:51.416734+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-06T20:15:02.886362+00:00 heroku[web.1]: State changed from crashed to starting
+2020-11-06T20:15:06.209272+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-11-06T20:15:08.471639+00:00 app[web.1]: 
+2020-11-06T20:15:08.471656+00:00 app[web.1]: > budget-app@1.0.0 start /app
+2020-11-06T20:15:08.471657+00:00 app[web.1]: > node server.js
+2020-11-06T20:15:08.471657+00:00 app[web.1]: 
+2020-11-06T20:15:08.994132+00:00 app[web.1]: App running on port 3000!
+2020-11-06T20:15:09.029843+00:00 app[web.1]: (node:23) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+2020-11-06T20:16:06.857241+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-11-06T20:16:06.888360+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-11-06T20:16:06.912714+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2020-11-06T20:16:06.982770+00:00 heroku[web.1]: Process exited with status 22
+2020-11-06T20:16:07.020100+00:00 heroku[web.1]: State changed from starting to crashed
+2020-11-07T00:34:59.391565+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=frozen-tundra-49156.herokuapp.com request_id=b2a724f4-a3cf-4b9f-bd53-726361bd93ac fwd="174.193.204.252" dyno= connect= service= status=503 bytes= protocol=https
+2020-11-07T00:34:59.729532+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=frozen-tundra-49156.herokuapp.com request_id=a75ff36d-695b-4882-b4e1-41e6251d7ea1 fwd="174.193.204.252" dyno= connect= service= status=503 bytes= protocol=https
