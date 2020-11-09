@@ -8,7 +8,7 @@ This project was built with NodeJS, Express, and MongoDB/Mongoose.
 
 ## Demo
 
-<img width="1187" alt="budgetTracker-img" src="https://user-images.githubusercontent.com/57122209/98058759-59c45280-1dfa-11eb-8c36-3c058decdec2.png">
+<img width="1164" alt="budget-tracker" src="https://user-images.githubusercontent.com/57122209/98498384-7cd87300-21fb-11eb-889f-847e5bfaa7ae.png">
 
 ---
 
