@@ -1,3 +1,5 @@
+// refer to class budget activity week 17 last activity
+// connects db when offline
 let db;
 // this is a request for new budget db
 const request = indexedDB.open("budget", 1);
